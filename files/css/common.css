@@ -97,3 +97,9 @@ main h4 a {
     background-color: #a51417;
     text-align: center;
 }
+
+ul {
+    margin-top: -15px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
