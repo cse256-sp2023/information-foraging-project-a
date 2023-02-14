@@ -1,6 +1,6 @@
 import { HTMLLoader } from '../core/utils/html_loader';
 import { Accordion } from './accordion';
-import { doSomething } from './do-something';
+//import { doSomething, highlight_current_page, toggleSelected,  } from './do-something';
 import { HTMLContent, itemsToCache } from './html-imports';
 import { Slideshow } from './slideshow';
 
@@ -9,6 +9,9 @@ export function PutStudentPageLoadOperationsInsideThisStudentBody() {
     // TODO: Put all operations that you want to happen on ever page load in this function.
     // For example you could write: Sticky.setup()
     doSomething();
+    // highlight_current_page();
+   // toggleSelected();
+   // showSelectedNavbarItem();
 }
 
 export async function setupAll() {
