@@ -1489,7 +1489,7 @@ try {
     }
     else {
         console.log('missing query params');
-        alert('This HIT is missing neccessary metadata, sorry for the inconvenience. Please contact the Requester as this is not intended to happen.');
+        //alert('This HIT is missing neccessary metadata, sorry for the inconvenience. Please contact the Requester as this is not intended to happen.');
     }
 }
 catch (e) {
@@ -1810,7 +1810,7 @@ var setup = function () { return __awaiter(void 0, void 0, void 0, function () {
                 scenario = scenarios_1.scenarios.find(function (scen) { return scen.tag === q_params_1.params.tag; });
                 if (!q_params_1.params.sandbox) {
                     if (scenario === null || scenario === undefined) {
-                        alert('This HIT is broken and cannot be completed at this time.');
+                        //alert('This HIT is broken and cannot be completed at this time.');
                     }
                     else {
                         tracker_1.Tracker.loadScenario(scenario);
