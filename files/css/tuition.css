@@ -102,3 +102,7 @@ main li {
 #class-schedule td {
     border: 1px solid #ddd;
 }
+
+#tuition-payments h4 {
+    font-size: 1.2em;
+}
