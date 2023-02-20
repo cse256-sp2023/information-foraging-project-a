@@ -1,5 +1,8 @@
 @import url("common.css");
 @import url("side_menu.css");
+@import url("accordian.css");
+@import url("card.css");
+
 main ul {
     margin-top: 1em;
 }
@@ -10,17 +13,47 @@ main li {
 }
 
 .classroom {
-    margin-top: 6em;
-    margin-bottom: 1em;
+    display: flex;
+    align-items: center;
+    width: 50%;
     clear: both;
     overflow: hidden;
+    padding: 10px;
+    font-size: 0.8em;
 }
 
 .classroom img {
     float: left;
     margin-right: 2.5em;
+
+    height: 320px;
+    width: 250px;
+    object-fit: cover;
+    
 }
 
 .classroom p {
     font-size: 1.15em;
+}
+
+.classroom-page-content {}
+
+.classroom-page-content-main {
+    float: right;
+}
+
+.classroom-page-content-secondary {
+    margin-top: 20px;
+    font-size: 1.35em;
+}
+
+.classroom-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.panel {
+    padding: 20px;
 }

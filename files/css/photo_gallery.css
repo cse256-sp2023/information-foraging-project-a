@@ -1,0 +1,16 @@
+@import url("common.css");
+
+.photo-gallery-page-content {
+    border: 1px solid red;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+}
+
+.gallery-image {
+    height: 350px;
+    width: 320px;
+    object-fit: cover;
+}

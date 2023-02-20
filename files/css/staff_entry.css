@@ -41,3 +41,10 @@
     float: left;
     overflow-wrap: normal;
 }
+
+.teacher-tenure {
+    font-size: 1.2rem;
+    line-height: 1.2;
+    font-weight: 320;
+    word-wrap: normal;
+}

@@ -24,3 +24,15 @@ main li {
 .classroom p {
     font-size: 1.15em;
 }
+
+.curriculum-page-content {
+}
+
+.curriculum-page-content-main {
+    float: right;
+}
+
+.curriculum-page-content-secondary {
+    margin-top: 20px;
+    font-size: 1.35em;
+}
