@@ -99,7 +99,6 @@ var Data = /** @class */ (function () {
 exports.Data = Data;
 exports.data = new Data(exports.urlData);
 Object.assign(window, { data: exports.data });
-
 },{}],3:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
@@ -181,7 +180,6 @@ var HistoryEvent = /** @class */ (function (_super) {
     return HistoryEvent;
 }(BaseTrackerEvent));
 exports.HistoryEvent = HistoryEvent;
-
 },{"../utils/console_wrapper":16,"../utils/funcs":17}],4:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
@@ -214,7 +212,6 @@ var EventReceiver = /** @class */ (function () {
     return EventReceiver;
 }());
 exports.EventReceiver = EventReceiver;
-
 },{"../utils/console_wrapper":16,"./event":3}],5:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
@@ -257,7 +254,6 @@ document_1.D.addEventListener("mturk-top-banner-back", "click", function (e) {
         alert("There is no page history to go back for at this time!");
     }
 });
-
 },{"../router/router":14,"../utils/console_wrapper":16,"./../router/history":13,"./document":6,"./elements":7}],6:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
@@ -339,7 +335,6 @@ var D = /** @class */ (function () {
     return D;
 }());
 exports.D = D;
-
 },{"./../utils/console_wrapper":16}],7:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
@@ -391,7 +386,6 @@ exports.Elements = {
     submitForm: makeElemIfNotExist('mturk-submit-form'),
     modal: makeElemIfNotExist('modal'),
 };
-
 },{"../utils/console_wrapper":16,"./document":6}],8:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
@@ -425,7 +419,6 @@ var HTMLLoc = /** @class */ (function () {
     return HTMLLoc;
 }());
 exports.HTMLLoc = HTMLLoc;
-
 },{"../utils/console_wrapper":16,"./../dom/elements":7}],9:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
@@ -463,7 +456,6 @@ document_1.D.each(Modal.elem, function (node) {
         e.preventDefault();
     });
 });
-
 },{"./../utils/console_wrapper":16,"./document":6,"./elements":7}],10:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
@@ -567,7 +559,6 @@ var Scroll = /** @class */ (function () {
     return Scroll;
 }());
 exports.Scroll = Scroll;
-
 },{"../utils/console_wrapper":16,"./../utils/funcs":17}],11:[function(require,module,exports){
 "use strict";
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
@@ -703,7 +694,6 @@ var SubmitForm = /** @class */ (function () {
     return SubmitForm;
 }());
 exports.SubmitForm = SubmitForm;
-
 },{"../utils/funcs":17,"./../data-log/data":2,"./../utils/console_wrapper":16,"./../utils/q_params":20,"./document":6,"./elements":7}],12:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
@@ -720,7 +710,6 @@ var TrackerElements = /** @class */ (function () {
     return TrackerElements;
 }());
 exports.TrackerElements = TrackerElements;
-
 },{"./banner":5,"./html_loc":8}],13:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
@@ -768,7 +757,6 @@ var History = /** @class */ (function () {
 }());
 exports.History = History;
 window.h = History;
-
 },{"./../tracker/tracker":15}],14:[function(require,module,exports){
 "use strict";
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
@@ -1053,7 +1041,6 @@ var Router = /** @class */ (function () {
     return Router;
 }());
 exports.Router = Router;
-
 },{"../dom/document":6,"../dom/elements":7,"../dom/modal":9,"../utils/console_wrapper":16,"../utils/funcs":17,"../utils/html_loader":18,"./history":13}],15:[function(require,module,exports){
 "use strict";
 var __read = (this && this.__read) || function (o, n) {
@@ -1146,7 +1133,6 @@ var Tracker = /** @class */ (function () {
     return Tracker;
 }());
 exports.Tracker = Tracker;
-
 },{"../data-log/event":3,"../data-log/receiver":4,"../dom/elements":7,"../dom/tracker_elems":12,"../utils/console_wrapper":16,"./../data-log/data":2,"./../dom/submit_form":11}],16:[function(require,module,exports){
 "use strict";
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
@@ -1229,7 +1215,6 @@ function log(message, importance) {
     }
 }
 exports.log = log;
-
 },{"./../data-log/data":2}],17:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
@@ -1242,7 +1227,6 @@ function now() {
     return new Date().getTime();
 }
 exports.now = now;
-
 },{"./console_wrapper":16}],18:[function(require,module,exports){
 "use strict";
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
@@ -1435,7 +1419,6 @@ var HTMLLoader = /** @class */ (function () {
     return HTMLLoader;
 }());
 exports.HTMLLoader = HTMLLoader;
-
 },{"../dom/document":6,"./console_wrapper":16,"./funcs":17}],19:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
@@ -1481,7 +1464,6 @@ var IDGenerator = /** @class */ (function () {
     return IDGenerator;
 }());
 exports.IDGenerator = IDGenerator;
-
 },{"../dom/elements":7,"./../dom/document":6,"./console_wrapper":16}],20:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
@@ -1515,7 +1497,6 @@ catch (e) {
     alert(e);
     alert('This HIT is broken, sorry for the inconvenience. Please contact the Requester as this is not intended to happen.');
 }
-
 },{}],21:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
@@ -1541,14 +1522,12 @@ function waitUntilReady() {
     return ready ? Promise.resolve(true) : readyPromise;
 }
 exports.waitUntilReady = waitUntilReady;
-
 },{"./console_wrapper":16}],22:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 // tslint:disable-next-line: no-var-requires
 exports.scenarios = require('./../../../../scenarios/scenarios.json');
 window.scenarios = exports.scenarios;
-
 },{"./../../../../scenarios/scenarios.json":1}],23:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
@@ -1589,7 +1568,6 @@ var Accordion = /** @class */ (function () {
     return Accordion;
 }());
 exports.Accordion = Accordion;
-
 },{"./../core/dom/document":6}],24:[function(require,module,exports){
 "use strict";
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
