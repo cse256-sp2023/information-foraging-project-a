@@ -15,11 +15,11 @@ main li {
 .classroom {
     display: flex;
     align-items: center;
-    width: 50%;
+    width: 100%;
     clear: both;
     overflow: hidden;
     padding: 10px;
-    font-size: 0.8em;
+    font-size: 0.9em;
 }
 
 .classroom img {
@@ -36,10 +36,13 @@ main li {
     font-size: 1.15em;
 }
 
-.classroom-page-content {}
+#page-content {
+    display: flex;
+    flex-wrap: nowrap;
+}
 
 .classroom-page-content-main {
-    float: right;
+
 }
 
 .classroom-page-content-secondary {
@@ -49,7 +52,7 @@ main li {
 
 .classroom-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-around;
 
 }

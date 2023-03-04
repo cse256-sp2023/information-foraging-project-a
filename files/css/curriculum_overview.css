@@ -25,11 +25,12 @@ main li {
     font-size: 1.15em;
 }
 
-.curriculum-page-content {
+#page-content {
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 .curriculum-page-content-main {
-    float: right;
 }
 
 .curriculum-page-content-secondary {
